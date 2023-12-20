@@ -1,0 +1,23 @@
+CREATE TABLE Clients
+(
+    PhoneNumber CHARACTER VARYING(12) PRIMARY KEY,
+    Pass TEXT NOT NULL,
+    FirstName CHARACTER VARYING(30) NOT NULL,
+    MiddleName CHARACTER VARYING(30) NOT NULL,
+    LastName CHARACTER VARYING(30) NOT NULL
+);
+
+CREATE TABLE BankAccounts
+(
+    AccountNumber CHARACTER(20) PRIMARY KEY,
+    AccountType TEXT NOT NULL,
+    ClientPhoneNumber CHARACTER VARYING(12) REFERENCES Clients(PhoneNumber)
+);
+
+INSERT INTO Clients VALUES ('+70003135876', 'BGaspHtqKO8CQHRknqaj1A==', 'Тест', 'Тестович', 'Тестов');
+INSERT INTO Clients VALUES ('+70003135879', 'BGaspHtqKO8CQHRknqaj1A==', 'Тест2', 'Тестович2', 'Тестов2');
+
+INSERT INTO BankAccounts VALUES ('42305840513000000112','Срочный','+70003135876');
+INSERT INTO BankAccounts VALUES ('42301810413002008000','До востребования','+70003135876');
+INSERT INTO BankAccounts VALUES ('40817810310009035474','Карточный','+70003135876');
+INSERT INTO BankAccounts VALUES ('40817810310009035468','Карточный','+70003135879');
