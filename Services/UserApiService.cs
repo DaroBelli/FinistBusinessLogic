@@ -50,7 +50,7 @@ namespace FinistBusinessLogic.Services
         /// Находит данные по счетам пользователя.
         /// </summary>
         /// <param name="phoneNumber">Номер телефона пользователя</param>
-        /// <param name="db"></param>
+        /// <param name="db">Контекст БД.</param>
         /// <returns></returns>
         private static Task<List<BankAccountReply>> GetBankAccounts (string phoneNumber, PostgresContext db)
         {
