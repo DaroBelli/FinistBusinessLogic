@@ -1,6 +1,6 @@
 # Мертинс Георгий Рудольфович - Тестовое задание Finist.
 
-Для запуска проектов C# appsettings.json в них ([бизнес логика](https://github.com/DaroBelli/FinistBusinessLogic/blob/master/appsettings.json), [веб шлюз](https://github.com/DaroBelli/FinistGateway/blob/master/appsettings.json)). В нём следует изменить строку подключения к бд и адреса запуска. В React нужно поменять в файле [url.js](https://github.com/DaroBelli/finist_web_client/blob/master/src/constants/url.js) адрес запуска.
+Для запуска проектов C# appsettings.json в них ([бизнес логика](https://github.com/DaroBelli/FinistBusinessLogic/blob/master/appsettings.json), [веб шлюз](https://github.com/DaroBelli/FinistGateway/blob/master/appsettings.json)). В нём следует изменить строку подключения к бд и адреса запуска. В React нужно поменять в файле [url.js](https://github.com/DaroBelli/finist_web_client/blob/master/src/constants/url.js) адрес запуска. В тестовом примере у профилей пароль "1234".
 
 ---
 
